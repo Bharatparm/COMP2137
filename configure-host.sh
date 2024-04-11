@@ -13,13 +13,6 @@ newhostname() {
         log_changes "Hostname updated to $desired_name"
     fi
 }
-changeslog() {
-    local message="$1"
-    if [ "$VERBOSE" = true ]; then
-        echo "$message"
-    fi
-    logger "$message"
-}
 
 
 
